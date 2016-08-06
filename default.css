@@ -58,6 +58,10 @@ body {
   50%   { opacity: 0.5; }
   100% { opacity: 0; }
 }
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+}
 
 a {
 	color: #f0f0f0;
