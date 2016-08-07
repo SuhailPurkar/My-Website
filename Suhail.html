@@ -21,6 +21,58 @@
 		<script src="https://use.typekit.net/pzx0zeb.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
 		<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+		<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+#myBtn {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    height: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
 	</head>
 	<body>
 	
@@ -195,7 +247,7 @@
 
 				</section>
 
-
+	
 		
 
 				<section id="fbsection5" style="background-color:#182327;">
@@ -203,8 +255,22 @@
 					<div class="footer" >
 					<h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s"><font color = "white"> Projects </font> </h1>
 					<img  src="http://i.imgur.com/gKS5988.png" alt="WHAAAAAAAAAAAAAAT" id="avatar" class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s"/>
-					<img src="http://i.imgur.com/gKS5988.png" alt="WHAAAAAAAAAAAAAAT" id="avatar" class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s" hspace="50"/>
+					<img src="http://i.imgur.com/gKS5988.png" alt="WHAAAAAAAAAAAAAAT" id="myBtn" class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s" hspace="50"/>
 					<img align="right" src="http://i.imgur.com/gKS5988.png" alt="WHAAAAAAAAAAAAAAT" id="avatar" class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s"/>
+					<!-- Trigger/Open The Modal -->
+				
+
+<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+ 						 <div class="modal-content">
+  					  <span class="close">x</span>
+  				  <p><center><font color = "black" >Some text in the Modal..</font> </center></p>
+ 			 </div>
+
+			</div>
+				
 
 					 <p class="caption">Text below the image</p>
 
@@ -299,6 +365,35 @@
     retina_detect: true
 });
 		</script>
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
 
 		<script>
 		$(window).load(function() {
