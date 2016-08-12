@@ -1,0 +1,328 @@
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+	height: 100%;
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+	position: fixed;
+	z-index: 9999;
+	right: 50px;
+	top: 50%;
+	width: 14px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+li {
+    float: left;
+    padding: 8px;
+    list-style-type: none;
+}
+
+
+
+.typed-cursor{
+
+    opacity: 1;
+   font-size: 3.8em; 
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.cbp-fbscroller > nav a {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	color: transparent;
+	width: 14px;
+	height: 14px;
+	outline: none;
+	margin: 18px 0;
+	border-radius: 50%;
+	border: 1px solid rgba(255,255,255,0.6);
+	transition:0.2s all linear;
+}
+
+.no-touch .cbp-fbscroller > nav a:hover {
+	background: rgba(255,255,255,0.6);
+	transition:0.2s all linear;
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+	background: #fff;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.no-touch .cbp-fbscroller section {
+	background-attachment: fixed;
+}
+
+#fbsection1 {
+	background:#182327;
+}
+
+#specialized {
+	background: url(http://i.imgur.com/0fR0RmH.jpg) #1f2a30;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+
+}
+
+#specialized h2 {
+	color: #e82737;
+}
+
+#specialized hr {
+	margin-bottom: 1.7em;
+	float: left;
+	border: none;
+    height: 1px;
+  
+	width: 9em;
+	color: #e82737;
+
+    text-align: center;
+; /* old IE */
+    background-color: transparent;
+; /* Modern Browsers */
+	border-top: thin double #e82737;
+}
+
+#specialized hr:after {
+    content: "♦";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    background-color : transparent;
+    padding: 0 1em;
+    
+}
+
+#dirtdays hr {
+	margin-bottom: 1.7em;
+	float: left;
+	border: none;
+    height: 1px;
+    
+	width: 13.6em;
+	color: #8BC34A;
+
+    text-align: center;
+; /* old IE */
+    background-color: transparent;
+; /* Modern Browsers */
+	border-top: thin double #8BC34A;
+}
+
+#dirtdays hr:after {
+    content: "♦";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    background-color : transparent;
+  
+   
+    
+}
+
+
+
+
+
+#specialized .info {
+
+	background: rgba(24, 33, 38, 0.9);
+
+}
+
+#boosted {
+	
+border:1px;
+	background: url(https://i.imgur.com/fbVEMLV.jpg) #151515;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+
+}
+
+#boosted h2 {
+	color: #ff6102;
+
+}
+
+
+#boosted hr {
+	margin-bottom: 1.7em;
+	color: #ff6102;
+	
+ 	background-color : transparent;
+    width: 5.635em;
+    
+    border: none;
+    border-top: thin double #ff6102;
+  
+    text-align: center;
+}
+
+#boosted hr:after {
+    content: "♦";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    background-color : transparent;
+    padding: 0 00em;
+    
+}
+
+
+#boosted .info {
+
+	background: rgba(21, 21, 21, 0.9);
+
+}
+
+#sassiholford {
+	background: url(../images/sassi3.png) #f9f9f9;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+
+}
+
+
+
+
+.hover {
+	background: #000;
+	background-position: 35% 50%!important;
+	transition: 0.2s ease-in-out;
+
+}
+
+#sassiholford .info {
+	background: rgba(198, 198, 198, 0.9);
+
+}
+
+#dirtdays {
+	background: url(http://i.imgur.com/K3Dps3B.gif) #132b33;
+	background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+
+}
+
+
+
+#dirtdays .info {
+	background: rgba(55, 84, 92, 0.9);
+
+}
+
+
+#volcom {
+	background: url(../images/volcom2.png) #015E7E;
+		background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+	transition: 1s ease-in-out;
+}
+
+#volcom .info {
+	background: rgba(8, 116, 154, 0.9);
+
+}
+
+#volcom h2 {
+	color: #d5e7f3;
+}
+
+#volcom hr {
+	color: #d5e7f3;
+	background: #d5e7f3;
+}
+
+#rileyscycles {
+	background: url(http://www.siddharthprem.com/Galleries/Lofoten/i-TTg9Lpf/0/X2/IMG_3635_web-X2.jpg) #2D353F;
+		background-size: 70%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: static;
+
+		transition: 1s ease-in-out;
+}
+
+
+#rileyscycles .info {
+	background: rgba(59, 72, 88, 0.9);
+
+}
+
+#rileyscycles h2 {
+	color: #ccc4ae;
+}
+
+#rileyscycles hr {
+	color: #ccc4ae;
+	background: #ccc4ae;
+}
+
+#fbsection5 {
+	background: #182327;
+	height: 100%;
+}
+
+#avatar {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+}
