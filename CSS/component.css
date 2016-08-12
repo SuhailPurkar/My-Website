@@ -133,7 +133,7 @@ li {
     
 }
 
-#dirtdays hr {
+#hero hr {
 	margin-bottom: 1.7em;
 	float: left;
 	border: none;
@@ -149,7 +149,7 @@ li {
 	border-top: thin double #8BC34A;
 }
 
-#dirtdays hr:after {
+#hero hr:after {
     content: "♦";
     display: inline-block;
     position: relative;
@@ -247,7 +247,7 @@ border:1px;
 
 }
 
-#dirtdays {
+#hero {
 	background: url(http://i.imgur.com/K3Dps3B.gif) #132b33;
 	background-size: 70%;
 	background-position: 50% 50%;
@@ -260,7 +260,7 @@ border:1px;
 
 
 
-#dirtdays .info {
+#hero .info {
 	background: rgba(55, 84, 92, 0.9);
 
 }

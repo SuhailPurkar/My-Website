@@ -26,6 +26,32 @@
 		<style>
 /* The Modal (background) */
 
+.outer-container {
+    
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.inner-container {
+  
+    display: inline-block;
+    position: relative;
+}
+.video-overlay {
+    position: relative;
+    left: 0em;
+    top: 0px;
+ 
+    font-size: 20px;
+    font-family: Helvetica;
+   
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
 div.img {
 
 
@@ -39,7 +65,7 @@ img.yup{
 
 img.yup:hover{
 	border-radius:100px;
-opacity: 0.375;
+
 box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.5);
 
 }
@@ -70,15 +96,29 @@ div.desc {
     margin-top: 5px;
     padding-bottom: 5px;
     text-align: left;
+   background-color: rgba(0,0,0,0.05); 
 }
 
 
 
-.responsive {
+div.downer {
+	background-color: #0097A7;
+}
+
+
+div.responsive {
     padding: 0px;
     float: left;
     width: 25%;
     height: 50%;
+    background-color: rgba(0,0,0,0.4); 
+ 
+}
+
+div.responsive:hover{
+	  
+
+	
 }
 
 .modal {
@@ -136,7 +176,7 @@ div.desc {
 				<ul style="list-style: none;">
 				<li><a href="#boosted"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Student. </h2></a></li>
 				<li><a href="#specialized"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Programmer. </h2></a></li>
-				<li><a href="#dirtdays"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Future Super Hero. </h2></a></li>
+				<li><a href="#hero"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Future Super Hero. </h2></a></li>
 
 				</ul>
 				<ol style="list-style: none;" align="center">
@@ -157,7 +197,7 @@ div.desc {
 				<nav>
 					<a href="#fbsection1" class="cbp-fbcurrent">Suhail Purkar</a>
 					<a href="#boosted">Booster Boards Website Concept</a>
-					<a href="#dirtdays">Dirtdays Website Concept</a>
+					<a href="#hero">hero </a>
 					<a href="#sassiholford">Sassi Holford Website</a>
 					<a href="#specialized">Speciliazed Website Concept</a>
 					
@@ -215,11 +255,15 @@ div.desc {
 			
 				<div class="mobileinfo">
 						<h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">About Me:<br /> Programmer</h1>
-						<div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Project</button></div>
+						<p>Software devloper well versed in Android app devlopment and Front end web development. Currently learning about the fields of data science and functional programming.<br/>
+						</p>
+						<div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button></div>
+
+
 				</div>	
 				</section>
 
-				<section id="dirtdays" class="sassihover">
+				<section id="hero" class="sassihover">
 				<div class="info">
 				<div class="text">
 
@@ -234,7 +278,11 @@ div.desc {
 				</div>
 				</div>		
 				<div class="mobileinfo">
-						<h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">Dirtdays</h1>
+					<br/>
+					<br/><br/>
+						<h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">About Me:<br /> Future Super Hero</h1>
+						<p>Fuck the police<br/>
+						</p>
 
 						
 				</div>
@@ -242,6 +290,11 @@ div.desc {
 
 
 				</section>
+
+		
+
+
+
 
 			
 <section id="projects" style="background-color:#132b33;" >
@@ -252,11 +305,22 @@ div.desc {
 
 
 		
-		<center><p class=" wow fadeInDown"  data-wow-duration="2s" data-wow-delay="0.1s" style = "font-size: 50px;    font-family: Georgia, serif;"> Projects </p></center>
+		
+
+
+	<div class="outer-container">
+    <div class="inner-container">
+      <center> <div class="video-overlay"><center><p class=" wow fadeInDown"  data-wow-duration="2s" data-wow-delay="0.1s" style = "font-size: 50px;    font-family: Georgia, serif;"> Projects </p></center></div></center>
+
+
+        <video id="player" src="https://chapteronemovie.b05-apps.nl/assets/videos/INTRO-MP4-GRADED-EGON_1.mp4"  autoplay loop></video>
+    </div>
+</div>
+	
 	
 
 
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s" style= "padding: 5.5em; background-color: #00ACC1;">
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s" style= "padding: 5.5em; ">
   <div class="img">
     <a target="_blank">
     
@@ -264,7 +328,7 @@ div.desc {
       
 			
     </a>
-      <div class="desc" style = "font-family: Georgia, serif;     color: rgba(0, 0, 0, 0.5);"> <center> <b>  RainyDay  </b><br />A compact light weight weather app. </center></div>
+     	<div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">RainyDay</button></div>
     
   </div>
 </div>
@@ -280,7 +344,7 @@ div.desc {
 </div>
 
 
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.6s" style= "padding: 5.5em; background-color: #0097A7;">
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.6s" style= "padding: 5.5em;">
   <div class="img ">
     <a target="_blank" >
 
@@ -289,14 +353,14 @@ div.desc {
 
 			
     </a>
-      <div class="desc" style = "font-family: Georgia, serif;     color: rgba(0, 0, 0, 0.5);"> <center><b> Just the Tip </b> <br /> Calculate your tip with ease </center></div>
+     <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Tip </button></div>
 
     
   </div>
 </div>
 
 
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.9s" style= "padding: 5.5em; background-color: #00838F;">
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.9s" style= "padding: 5.5em; ">
   <div class="img">
     <a target="_blank" >
     
@@ -304,36 +368,34 @@ div.desc {
       
 			
     </a>
-  <div class="desc" style = "font-family: Georgia, serif;     color: rgba(0, 0, 0, 0.5);"> <center><b> Calculator </b> <br /> An elegant material calculator for Android </center> </div>
+   <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Calculator </button></div>
 
   </div>
 </div>
 
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="1.2s" style= "padding: 5.5em; background-color: #006064;" >
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.9s" style= "padding: 5.5em; ">
   <div class="img">
-    <a target="_blank" href="img_forest.jpg">
+    <a target="_blank" >
     
-      <img  class = "yup" style = " border: 3.5px solid #265485; border-radius: 50%;"src="http://i.imgur.com/KRbnL3j.jpg" alt="Forest" width="1000" height="1000">
+      <img class = "yup" src="https://drslash.com/wp-content/uploads/2014/07/Contacts.png" alt="Forest" width="600" height="400">
       
 			
     </a>
-    
-    
-   <div class="desc" style = "font-family: Georgia, serif;     color: rgba(0, 0, 0, 0.5);"> <center> <b>  Presidents 2048  </b><br />An elegant material calculator for Android</center></div>
+ <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> JTT </button></div>
+
   </div>
 </div>
 
 
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s" style= "padding: 5.5em; background-color: #00ACC1;">
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s" style= "padding: 5.5em; ">
   <div class="img">
     <a target="_blank">
     
-      <img class = "yup" id="myBtn" src="http://i.imgur.com/lBn6Fks.png" alt="Forest" width="600" height="400">
+      <img class = "yup" id="myBtn" src="https://drslash.com/wp-content/uploads/2015/06/Deluge.png" alt="Forest" width="600" height="400">
       
 			
     </a>
-      <div class="desc" style = "font-family: Georgia, serif;     color: rgba(0, 0, 0, 0.5);"> <center> <b>  RainyDay  </b><br />A compact light weight weather app. </center></div>
-    
+       <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> JTT </button></div>
   </div>
 </div>
 
@@ -348,75 +410,90 @@ div.desc {
 </div>
 
 
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.6s" style= "padding: 5.5em; background-color: #0097A7;">
+                   
+
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.6s" style= "padding: 5.5em;">
   <div class="img ">
     <a target="_blank" >
 
-      <img class = "yup" id = "myBtn1" src="http://rcdcapital.com/wp-content/uploads/2016/02/Hard-Money-Icon-3.png" alt="Forest" width="600" height="400">
+      <img class = "yup" id = "myBtn1" src="https://drslash.com/wp-content/uploads/2014/07/Neutron.png" alt="Forest" width="600" height="400">
       
 
 			
     </a>
-      <div class="desc" style = "font-family: Georgia, serif;     color: rgba(0, 0, 0, 0.5);"> <center><b> Just the Tip </b> <br /> Calculate your tip with ease </center></div>
+      <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> JTT </button></div>
 
     
   </div>
 </div>
 
 
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.9s" style= "padding: 5.5em; background-color: #00838F;">
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.9s" style= "padding: 5.5em; ">
   <div class="img">
     <a target="_blank" >
     
-      <img class = "yup" src="https://drslash.com/wp-content/uploads/2014/07/Calculator.png" alt="Forest" width="600" height="400">
+      <img class = "yup" src="https://drslash.com/wp-content/uploads/2016/02/Apps-Wireshark.png" alt="Forest" width="600" height="400">
       
 			
     </a>
-  <div class="desc" style = "font-family: Georgia, serif;     color: rgba(0, 0, 0, 0.5);"> <center><b> Calculator </b> <br /> An elegant material calculator for Android </center> </div>
-
+   <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> JTT </button></div>
   </div>
 </div>
 
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="1.2s" style= "padding: 5.5em; background-color: #006064;" >
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="1.2s" style= "padding: 5.5em; " >
   <div class="img">
     <a target="_blank" href="img_forest.jpg">
     
-      <img  class = "yup" style = " border: 3.5px solid #265485; border-radius: 50%;"src="http://i.imgur.com/KRbnL3j.jpg" alt="Forest" width="1000" height="1000">
+      <img  class = "yup" src="https://drslash.com/wp-content/uploads/2014/07/Batman5.png" alt="Forest" width="1000" height="1000">
       
 			
     </a>
     
     
-   <div class="desc" style = "font-family: Georgia, serif;     color: rgba(0, 0, 0, 0.5);"> <center> <b>  Presidents 2048  </b><br />An elegant material calculator for Android</center></div>
+    <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> 2048 </button></div>
   </div>
+
+
+
 </div>
 
 
 
-	
 
-				</section>
-
-					
-
-
-
-					    <div class="row" style="background-color:#132b33;">
+<div class="row " style = " background-color: rgba(0,0,0,0.5); " >
                 
-           <center> <div>
+           <center> <div  style = " background-color: rgba(0,0,0,0.4); ">
+           
+           
 					<a href="inline bg-darkest-gray">
-				<a href="https://github.com/SuhailPurkar" target="_blank" class="shareicon2 entypo-github wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s"></a>
-				<a href="https://www.linkedin.com/in/suhail-purkar-394929117" target="_blank" class="shareicon2 entypo-linkedin wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s"></a>
+				<a style = "background-color: rgba(0,0,0,0.4); " href="https://github.com/SuhailPurkar" target="_blank" class="shareicon2 entypo-github wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s"></a>
+				<a style = "background-color: rgba(0,0,0,0.4); " href="https://www.linkedin.com/in/suhail-purkar-394929117" target="_blank" class="shareicon2 entypo-linkedin wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s"></a>
 				
-				<a onclick="phone()" href="781-267-3113" target="_blank" class="shareicon2 entypo-phone wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s"></a>
-				<a onclick="home()" href="781-267-3113" target="_blank" class="shareicon2 entypo-home wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s"></a>
-				<a href="https://www.facebook.com/suhail.purkar" target="_blank" class="shareicon2 entypo-facebook wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"></a>
-				<a href="mailto:suhailpurkar@gmail.com" class="shareicon2 entypo-mail wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.5s"></a>
+				<a style = "background-color: rgba(0,0,0,0.4); " onclick="phone()" href="781-267-3113" target="_blank" class="shareicon2 entypo-phone wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s"></a>
+				<a style = "background-color: rgba(0,0,0,0.4); "onclick="home()" href="781-267-3113" target="_blank" class="shareicon2 entypo-home wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.3s"></a>
+				<a style = "background-color: rgba(0,0,0,0.4); "href="https://www.facebook.com/suhail.purkar" target="_blank" class="shareicon2 entypo-facebook wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"></a>
+				<a style = "background-color: rgba(0,0,0,0.4); " href="mailto:suhailpurkar@gmail.com" class="shareicon2 entypo-mail wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.5s"></a>
+			
+			
+			
 				
 
 
 </div></center> 
 					</div>
+
+	
+
+				</section>
+
+
+
+
+					
+	
+
+
+					    
 				
 			</div>
 
