@@ -326,3 +326,6 @@ border:1px;
 	width: 120px;
 	height: 120px;
 }
+#avatar:hover {
+	 transform: translateY(-5px);
+}
