@@ -1,3 +1,3 @@
 # Personal-Website
 
-#JQuery Plugins  
+##JQuery Plugins  
