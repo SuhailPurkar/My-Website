@@ -92,7 +92,7 @@ li {
 }
 
 #specialized {
-	background: url(http://i.imgur.com/0fR0RmH.jpg) #1f2a30;
+	background: url(http://i.imgur.com/yK3VDgP.jpg) #1f2a30;
 	background-size: 70%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -131,6 +131,10 @@ li {
     background-color : transparent;
     padding: 0 1em;
     
+}
+
+#bottom {
+	background-color: #151515;
 }
 
 #hero hr {
@@ -182,6 +186,10 @@ border:1px;
 	position: static;
 	transition: 1s ease-in-out;
 
+}
+
+#boosted h2{
+	
 }
 
 #boosted h2 {

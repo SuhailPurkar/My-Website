@@ -512,6 +512,8 @@ section .footer .button--wapasha.button--inverted:hover {
 	display: none;
 }
 
+
+
 @media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
 	#sassiholford, #specialized, #volcom, #rileyscycles {
 		background-attachment: scroll!important;
