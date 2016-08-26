@@ -200,21 +200,22 @@ header a {
       display: inline-block;
 	  width: 48px;
   	  height: 48px;
- 	  padding: 11px;
+ 	  
       position: relative;
       background: transparent;
       transition: all 0.2s ease;
       text-decoration: none;
-      margin: 22px 8px;
+      
       
     }
 
           
 .shareicon2:hover {
-		 border: 4px solid #abab81;
-			background: #abab81;
+
+		 border: 4px double #353e41;
+			background: transparent;
 				color: #FFF;
-         top: -2px;
+         top: -3px;
          transition: all 0.2s ease;
 
       }
