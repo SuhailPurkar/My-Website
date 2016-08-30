@@ -235,6 +235,14 @@ div.responsive:hover{
   
 }
 
+.hyper{
+
+}
+
+.hyper:hover{
+  color: gray;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -266,7 +274,7 @@ div.responsive:hover{
     height: 80%;
 }
 /* The Close Button */
-.close {
+.close, .close1, .close2 {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -278,6 +286,22 @@ div.responsive:hover{
     text-decoration: none;
     cursor: pointer;
 }
+
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 </style>
   </head>
   <body>
@@ -475,29 +499,63 @@ div.responsive:hover{
   <div class="img">
     <a target="_blank">
     
-      <img class = "yup" id="myBtn" src="http://i.imgur.com/PN5LYY7.png" alt="Forest" width="600" height="400">
+      <img class = "yup"  src="http://i.imgur.com/PN5LYY7.png" alt="Forest" width="600" height="400">
       
       
     </a>
-      <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Sunshine</button></div>
+      <div class="wow fadeInUp" data-wow-duration="0.6s" id="myBtn" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Sunshine</button></div>
     
   </div>
 </div>
 
-<div id="myModal" class="modal">
+<div id="sunshinemodal" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content" style = "background-color: rgba(0,0,0,0.75);">
     <span class="close">×</span>
     <center><p style = "font-size: 30px">Sunshine</p></center>
 
-    <center><p >A light weight weather app that synchronizes weather information from the <a href = "http://openweathermap.org/api" target = "_blank">OpenWeatherMap API. </a></p></center>
+    <center><p >A light weight weather app that synchronizes weather information from the <a class = "hyper" href = "http://openweathermap.org/api" target = "_blank">OpenWeatherMap API. </a></p></center>
     <center><div>  <center><a href = "https://github.com/SuhailPurkar/Sunshine-2.0" target = "_blank"><button onclick="https://github.com/SuhailPurkar/Sunshine-2.0" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
   <center>  <img src="http://i.imgur.com/hJ4bhfC.gif" alt="Forest" > </center>
 
   </div>
 
 </div>
+
+<div id="tipmodal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style = "background-color: rgba(0,0,0,0.75);">
+    <span class="close1">×</span>
+    <center><p style = "font-size: 30px;font-family: "Courier New", Courier, monospace; ">Just The Tip</p></center>
+
+    <center><p style = "font-family: "Courier New", Courier, monospace; ">A simple app to help you calculate the tip on any order. </p></center>
+    <center><div>  <center><a href = "https://github.com/SuhailPurkar/Just-The-Tip" target = "_blank"><button onclick=" " id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
+  <center>  <img src="http://i.imgur.com/gucXCIJ.gif" alt="Forest" > </center>
+
+  </div>
+
+</div>
+
+<div id="calcmodal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style = "background-color: rgba(0,0,0,0.75);">
+    <span class="close2">×</span>
+    <center><p style = "font-size: 30px;font-family: "Courier New", Courier, monospace; "> Calculator </p></center>
+
+    <center><p style = "font-family: "Courier New", Courier, monospace; ">An elegantly simple material calculator</p></center>
+    <center><div>  <center><a href = "https://github.com/SuhailPurkar/Calculator" target = "_blank"><button onclick=" " id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
+  <center>  <img src="http://i.imgur.com/dVR4yu5.gif" alt="Forest" > </center>
+
+  </div>
+
+</div>
+
+
+
+
 
 
 <div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.6s" style= "padding: 5.5em;">
@@ -520,11 +578,11 @@ div.responsive:hover{
   <div class="img">
     <a target="_blank" >
     
-      <img class = "yup" src="https://drslash.com/wp-content/uploads/2014/07/Calculator.png" alt="Forest" width="600" height="400">
+      <img class = "yup"  src="https://drslash.com/wp-content/uploads/2014/07/Calculator.png" alt="Forest" width="600" height="400">
       
       
     </a>
-   <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Calculator </button></div>
+   <div class="wow fadeInUp" id = "myBtn2" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Calculator </button></div>
 
   </div>
 </div>
@@ -555,15 +613,7 @@ div.responsive:hover{
   </div>
 </div>
 
-<div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content" style = "background-color: #132b33">
-    <span class="close">×</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
 
 
                    
@@ -728,18 +778,42 @@ div.responsive:hover{
     </script>
   <script>
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('sunshinemodal');
+var modal1 = document.getElementById('tipmodal');
+var modal2 = document.getElementById('calcmodal');
+
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
 // Get the <span> element that closes the modal
+
 var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close1")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+
 // When the user clicks the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
 }
+
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+}
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+span2.onclick = function() {
+    modal2.style.display = "none";
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -747,30 +821,20 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
 </script>
 
-  <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn1");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+
 
 
 
