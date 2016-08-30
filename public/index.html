@@ -261,7 +261,7 @@ div.responsive:hover{
     background-color: #5cb85c;
     color: white;
 }
-#myBtn,#myBtn1, #myBtn2  {
+#myBtn,#tipCalcButtonModal, #calcButtonModal  {
   
 }
 /* Modal Content */
@@ -562,12 +562,12 @@ div.responsive:hover{
   <div class="img ">
     <a target="_blank" >
 
-      <img class = "yup" id = "myBtn1" src="http://rcdcapital.com/wp-content/uploads/2016/02/Hard-Money-Icon-3.png" alt="Forest" width="600" height="400">
+      <img class = "yup"  src="http://rcdcapital.com/wp-content/uploads/2016/02/Hard-Money-Icon-3.png" alt="Forest" width="600" height="400">
       
 
       
     </a>
-     <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Tip Calc </button></div>
+     <div id = "tipCalcButtonModal" class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Tip Calc </button></div>
 
     
   </div>
@@ -582,7 +582,7 @@ div.responsive:hover{
       
       
     </a>
-   <div class="wow fadeInUp" id = "myBtn2" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Calculator </button></div>
+   <div class="wow fadeInUp" id = "calcButtonModal" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Calculator </button></div>
 
   </div>
 </div>
@@ -622,7 +622,7 @@ div.responsive:hover{
   <div class="img ">
     <a target="_blank" >
 
-      <img class = "yup" id = "myBtn1" src="http://i.imgur.com/lBn6Fks.png" alt="Forest" width="600" height="400">
+      <img class = "yup" id = "tipCalcButtonModal" src="http://i.imgur.com/lBn6Fks.png" alt="Forest" width="600" height="400">
       
 
       
@@ -784,8 +784,8 @@ var modal2 = document.getElementById('calcmodal');
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-var btn1 = document.getElementById("myBtn1");
-var btn2 = document.getElementById("myBtn2");
+var btn1 = document.getElementById("tipCalcButtonModal");
+var btn2 = document.getElementById("calcButtonModal");
 // Get the <span> element that closes the modal
 
 var span = document.getElementsByClassName("close")[0];
