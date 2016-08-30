@@ -261,7 +261,7 @@ div.responsive:hover{
     background-color: #5cb85c;
     color: white;
 }
-#myBtn,#tipCalcButtonModal, #calcButtonModal  {
+#sunshineButtonModal,#tipCalcButtonModal, #calcButtonModal  {
   
 }
 /* Modal Content */
@@ -503,7 +503,7 @@ div.responsive:hover{
       
       
     </a>
-      <div class="wow fadeInUp" data-wow-duration="0.6s" id="myBtn" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Sunshine</button></div>
+      <div class="wow fadeInUp" data-wow-duration="0.6s" id="sunshineButtonModal" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Sunshine</button></div>
     
   </div>
 </div>
@@ -605,7 +605,7 @@ div.responsive:hover{
   <div class="img">
     <a target="_blank">
     
-      <img class = "yup" id="myBtn" src="http://i.imgur.com/WDtWz6O.png" alt="Forest" width="600" height="400">
+      <img class = "yup" id="sunshineButtonModal" src="http://i.imgur.com/WDtWz6O.png" alt="Forest" width="600" height="400">
       
       
     </a>
@@ -781,16 +781,21 @@ div.responsive:hover{
 var modal = document.getElementById('sunshinemodal');
 var modal1 = document.getElementById('tipmodal');
 var modal2 = document.getElementById('calcmodal');
+var modal3 = document.getElementById('alexandriamodal');
+var modal4 = document.getElementById('t48modal');
+var modal5 = document.getElementById('rainydaymodal');
+var modal6 = document.getElementById('miwokmodal');
+var modal7 = document.getElementById('stockhawkmodal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("sunshineButtonModal");
 var btn1 = document.getElementById("tipCalcButtonModal");
 var btn2 = document.getElementById("calcButtonModal");
 // Get the <span> element that closes the modal
 
 var span = document.getElementsByClassName("close")[0];
-var span1 = document.getElementsByClassName("close1")[0];
-var span2 = document.getElementsByClassName("close2")[0];
+var span1 = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
 btn.onclick = function() {
