@@ -1,3 +1,6 @@
 # Personal-Website
 
-##JQuery Plugins  
+
+##JQuery Plugin
+
+##License
