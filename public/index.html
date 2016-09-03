@@ -331,9 +331,9 @@ div.responsive:hover{
     <li><a href="https://www.linkedin.com/in/suhail-purkar-394929117" target="_blank"><img src="http://i.imgur.com/KZ0nGo5.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/> </a></li>
     <li><a href="https://www.facebook.com/suhail.purkar" target="_blank"><img src="http://i.imgur.com/rSWBzHQ.png"  class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>
     <li><a href="http://codepen.io/suhailp/" target="_blank"><img src="http://i.imgur.com/JqvjmWo.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>
-    <li><img src="http://i.imgur.com/GvbAIbm.png" href="mailto:suhailpurkar@gmail.com" target="_blank" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></li>
-    <li><a href="https://github.com/SuhailPurkar" target="_blank"><img src="http://i.imgur.com/ranGo4Q.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li> 
-    <li><a href="https://github.com/SuhailPurkar" target="_blank"><img src="http://i.imgur.com/2qqsIkM.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s">
+    <li><a onClick="email()"><img src="http://i.imgur.com/GvbAIbm.png" href="mailto:suhailpurkar@gmail.com" target="_blank" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>
+    <li><a onclick="phone()"><img src="http://i.imgur.com/ranGo4Q.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li> 
+    <li><a onclick="home()" target="_blank"><img src="http://i.imgur.com/2qqsIkM.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s">
     <li><a href="https://github.com/SuhailPurkar" target="_blank"><img src="http://i.imgur.com/r6RJ6vu.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>   
       </a></ol>
 
@@ -723,7 +723,7 @@ div.responsive:hover{
           <p class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">
           Sophmore at the University of Massachussets Amherst pursuing a B.S. in Computer Science and a minor in Mathematics. Passionate about creating clean, unique and elegant applications.
           </p>
-          <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='https://www.facebook.com/suhail.purkar'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Say Hello</button></div>
+          <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><a href="mailto:suhailpurkar@gmail.com?Subject=Hello%20"><button  target="_top" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Say Hello</button></a></div>
 
           </div>
         </section>
@@ -893,6 +893,19 @@ window.onclick = function(event) {
 
 
 
+</script>
+
+
+<script>
+function phone() {
+    alert("Call me: 781-267-3113");
+}
+function home() {
+    alert("Umass AMherst, Thatcher Hall");
+}
+function email(){
+    alert("Email me: suhailpurkar@gmail.com");
+}
 </script>
 
 
