@@ -3,7 +3,7 @@
 ##Live 
 
 ##Demo
-[<img src="http://i.imgur.com/M9VAjhr.gif" >](http://i.imgur.com/M9VAjhr.gif)
+[<img src="http://i.imgur.com/gbV3eCD.gif" >]http://i.imgur.com/gbV3eCD.gif)
 
 ##JQuery Plugins
 
