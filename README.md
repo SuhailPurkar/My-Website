@@ -7,6 +7,7 @@
 
 ##JQuery Plugins
 Vincent Garreaus [particles.js](http://vincentgarreau.com/particles.js/).
+Matt Boldts [typed.js](http://www.mattboldt.com/demos/typed-js/).
 ##License
 
  
