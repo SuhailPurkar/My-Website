@@ -56,10 +56,19 @@
  #bottom {
   display: none;
 }
+  .descriptions1{
+  display: none;
+  }
+}
 
 
 }
+.descriptions{
 
+  }
+.descriptions1{
+
+  }
 /* Header Graphics */
 @media only screen and (min-width: 767.5px) {
 .top{
@@ -78,7 +87,9 @@ display: none;
   .pic{
 display: none;
   }
-  
+  .descriptions{
+display: none;
+  }
   .mobileinfo{
 
   }
@@ -261,7 +272,7 @@ div.responsive:hover{
     background-color: #5cb85c;
     color: white;
 }
-#sunshineButtonModal, #sunshineImgModal, #tipCalcButtonModal, #tipCalcImgModal ,#calcButtonModal, #calcImgModal, #miwokButtonModal, #miwokImgModal, #  {
+#sunshineButtonModal, #sunshineImgModal, #tipCalcButtonModal, #tipCalcImgModal ,#calcButtonModal, #calcImgModal, #miwokButtonModal, #miwokImgModal, #alexandriaImgModal  {
   
 }
 /* Modal Content */
@@ -319,10 +330,12 @@ div.responsive:hover{
       <header class="diss clearfix">
         <h1 class="bruh wow fadeInDown"  data-wow-duration="0.6s" data-wow-delay="0.1s"></h1>
         <ul style="list-style: none;">
-        <li><a href="#boosted"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Student. </h2></a></li>
-        <li><a href="#specialized"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Programmer. </h2></a></li>
-        <li><a href="#hero"><h2 class="diss wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Future Super Hero. </h2></a></li>
-
+        <li><a href="#boosted"><h2 class=" wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Student.</h2></a></li>
+        <li><a href="#specialized"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Programmer.</h2></a></li>
+        <li><h2 class="descriptions1 wow " data-wow-duration="0.6s" data-wow-delay="0.2s">Future Super Hero. </h2></li>
+        <li><a href="#hero"><h2 class="descriptions diss wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Future Super Hero.</h2></a></li>
+        
+        
         </ul>
         <ol style="list-style: none;" align="center">
         <a href="inline bg-darkest-gray">
@@ -400,9 +413,9 @@ div.responsive:hover{
         </div>    
         
         <div class="mobileinfo gimmesomepadding">
-            <h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">About Me: Student</h1>
+            <h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">Web Developer</h1>
             
-            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Project</button></div>
+            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button></div>
             </p>
             
         </div>
@@ -428,10 +441,10 @@ div.responsive:hover{
       
         <div class="mobileinfo gimmesomepadding" >
             <h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s"><br /> <br />
-              Rainyday</h1>
+              Android Developer</h1>
             
 
-            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Project</button></div>
+            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button></div>
 
 
         </div>  
@@ -528,7 +541,7 @@ div.responsive:hover{
 
   </div>
 
-</div>
+</div> 
 
 <div id="miwokmodal" class="modal">
 
@@ -538,6 +551,21 @@ div.responsive:hover{
     <center><p style = "font-size: 30px">Miwok</p></center>
 
     <center><p >A user friendly Android app to help you learn the Miwok language.</p></center>
+    <center><div>  <center><a href = "https://github.com/SuhailPurkar/Miwok" target = "_blank"><button id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
+  <center>  <img src="http://i.imgur.com/0nvfTj1.gif" alt="Forest" > </center>
+
+  </div>
+
+</div>
+
+<div id="alexandriamodal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style = "background-color: rgba(0,0,0,0.75);">
+    <span class="close4">×</span>
+    <center><p style = "font-size: 30px">Alexandria</p></center>
+
+    <center><p >A simple app to help you find, share and store books. ISBN-13 information pulled from the Google Books APIs. Made during Udacity Advanced Android course.</p></center>
     <center><div>  <center><a href = "https://github.com/SuhailPurkar/Miwok" target = "_blank"><button id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
   <center>  <img src="http://i.imgur.com/0nvfTj1.gif" alt="Forest" > </center>
 
@@ -588,7 +616,7 @@ div.responsive:hover{
   <div class="img">
     <a target="_blank" >
     
-      <img class = "yup" src="https://drslash.com/wp-content/uploads/2014/07/Contacts.png" alt="Forest" width="600" height="400">
+      <img class = "yup" id = "alexandriaImgModal" src="https://drslash.com/wp-content/uploads/2014/07/Contacts.png" alt="Forest" width="600" height="400">
       
       
     </a>
@@ -814,6 +842,7 @@ var modal = document.getElementById('sunshinemodal');
 var modal1 = document.getElementById('tipmodal');
 var modal2 = document.getElementById('calcmodal');
 var modal3 = document.getElementById('miwokmodal');
+var modal4 = document.getElementById('alexandriamodal');
 
 // Get the button that opens the modal
 var btn = document.getElementById("sunshineButtonModal");
@@ -823,13 +852,15 @@ var btn3 = document.getElementById("calcImgModal");
 var btn4 = document.getElementById("sunshineImgModal");
 var btn5 = document.getElementById("tipCalcImgModal");
 var btn6 = document.getElementById("miwokImgModal");
-var btn7 = document.getElementById("miwokButtonModal");;
+var btn7 = document.getElementById("miwokButtonModal");
+var btn8 = document.getElementById("alexandriaImgModal");
 // Get the <span> element that closes the modal
 
 var span = document.getElementsByClassName("close")[0];
 var span1 = document.getElementsByClassName("close1")[0];
 var span2 = document.getElementsByClassName("close2")[0];
 var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
 // When the user clicks the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
@@ -856,7 +887,9 @@ btn6.onclick = function() {
 btn7.onclick = function() {
     modal3.style.display = "block";
 }
-
+btn8.onclick = function() {
+    modal4.style.display = "block";
+}
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
@@ -875,7 +908,9 @@ span3.onclick = function() {
     modal3.style.display = "none";
 } 
 
-
+span4.onclick = function() {
+    modal4.style.display = "none";
+} 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -887,6 +922,8 @@ window.onclick = function(event) {
         modal2.style.display = "none";
     } else if (event.target == modal3){
         modal3.style.display = "none";
+    } else if (event.target == modal4){
+        modal4.style.display = "none";
     } 
 }
 
