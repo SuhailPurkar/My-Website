@@ -1,15 +1,15 @@
 # Personal-Website 
 My personal website. (Under Construction)
-##Live 
-https://personalwebsite-a1535.firebaseapp.com/
+## Live 
+suhailpurkar.io
 
-##Demo
+## Demo
 [<img src="http://i.imgur.com/gbV3eCD.gif" >](http://i.imgur.com/gbV3eCD.gif)
 
-##JQuery Plugins
+## JQuery Plugins
 Vincent Garreaus [particles.js](http://vincentgarreau.com/particles.js/). <br />
 Matt Boldts [typed.js](http://www.mattboldt.com/demos/typed-js/).
-##License
+## License
 
 https://personalwebsite-a1535.firebaseapp.com is Licensed under the MIT license.
 
