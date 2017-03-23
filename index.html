@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/personalwebsite-a1535.appspot.com/o/default.css?alt=media&token=72ed8de4-08a7-488b-a000-13ca818f45a0" />
     <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/personalwebsite-a1535.appspot.com/o/animate.css?alt=media&token=946c7106-44dc-4cb5-b158-53119b0b4197" />
-    <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/personalwebsite-a1535.appspot.com/o/component.css?alt=media&token=611bad5e-e3fe-4ca8-a739-4835d2b0eee7" />
+    <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/personalwebsite-a1535.appspot.com/o/component.css?alt=media&token=0aaf54e3-bc34-40fb-8b9e-d36a080c249b" />
      <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/personalwebsite-a1535.appspot.com/o/typicons.min.css?alt=media&token=b0c81ac4-a657-418d-b95d-b30f20dc7fb7" /> 
     
     <!--<script src="js/modernizr.custom.js"></script>-->
@@ -27,11 +27,34 @@
     <script>try{Typekit.load();}catch(e){}</script>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
     <style>
+
+
 .diss{
 
 }
 
 
+section .footer1 .button{
+margin-left: 55px;
+}
+
+
+
+section .footer1 {
+  text-align: center;
+  top: 50%;
+  width: 300px;
+  height: 500px;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -150px;
+  font-family: "ff-tisa-web-pro";
+  font-size: 1.2em;
+  position: absolute;
+  color: #b8b8b8;
+  font-weight: 400;
+  line-height: 26px;
+}
 
 
 
@@ -56,17 +79,24 @@
  #bottom {
   display: none;
 }
+  .descriptions1{
+  display: none;
+  }
+}
 
 
 }
+.descriptions{
 
+  }
+.descriptions1{
+
+  }
 /* Header Graphics */
 @media only screen and (min-width: 767.5px) {
 .top{
 display: none;
-} 
-
-
+}
 }
 
 /* Responsive Graphics */
@@ -74,6 +104,47 @@ display: none;
 .diss{
 display: none;
 }
+}
+@media only screen and (min-width: 1368px) {
+
+#projects{
+    display: none;
+  }
+.sidebar1{
+  display: none;
+}
+img.face{
+  
+}
+}
+#bottom1{
+  background-color: #151515;
+}
+
+.sidebar{
+
+}
+@media only screen and (max-width: 1367px) {
+
+#bottom1{
+    display: none;
+  }
+img.face1{
+  display: none;
+}
+.sidebar{
+   display: none;
+}
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+
+
+#bottom1{
+   
+  }
 
 }
 
@@ -81,14 +152,11 @@ display: none;
   .pic{
 display: none;
   }
-
-
-  
+  .descriptions{
+display: none;
+  }
   .mobileinfo{
 
-  }
-  #boosted{
-  	display: none;
   }
   #hero{
     display: none;
@@ -191,6 +259,19 @@ box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.5);
 
 }
 
+img.face1{
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+}
+
+img.face1:hover{
+  border-radius:100px;
+transform: translateY(-5px);
+box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.5);
+
+}
+
 
 .city {
    float: left;
@@ -243,6 +324,14 @@ div.responsive:hover{
   
 }
 
+.hyper{
+
+}
+
+.hyper:hover{
+  color: gray;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -261,7 +350,7 @@ div.responsive:hover{
     background-color: #5cb85c;
     color: white;
 }
-#myBtn,#myBtn1, #myBtn2  {
+#sunshineButtonModal, #sunshineImgModal, #tipCalcButtonModal, #tipCalcImgModal ,#calcButtonModal, #calcImgModal, #miwokButtonModal, #miwokImgModal, #alexandriaImgModal  {
   
 }
 /* Modal Content */
@@ -274,7 +363,7 @@ div.responsive:hover{
     height: 80%;
 }
 /* The Close Button */
-.close, .close1 {
+.close, .close1, .close2, .close3 {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -295,6 +384,20 @@ div.responsive:hover{
     cursor: pointer;
 }
 
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 </style>
   </head>
   <body>
@@ -303,12 +406,14 @@ div.responsive:hover{
     <div class="container">
 
       <header class="diss clearfix">
-        <h1 class="bruh wow fadeInDown"  data-wow-duration="0.6s" data-wow-delay="0.1s"></h1>
+        <h1 class="bruh wow fadeInDown"  data-wow-duration="0.6s" data-wow-delay="0.1s">Suhail Purkar</h1>
         <ul style="list-style: none;">
-        <li><a href="#boosted"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Student. </h2></a></li>
-        <li><a href="#specialized"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Programmer. </h2></a></li>
-        <li><a href="#hero"><h2 class="diss wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Future Super Hero. </h2></a></li>
-
+        <li><a href="#boosted"><h2 class=" wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Student.</h2></a></li>
+        <li><a href="#specialized"><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Programmer.</h2></a></li>
+        <li><h2 class="descriptions1 wow " data-wow-duration="0.6s" data-wow-delay="0.2s">Future Super Hero. </h2></li>
+        <li><a href="#hero"><h2 class="descriptions diss wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Future Super Hero.</h2></a></li>
+        
+        
         </ul>
         <ol style="list-style: none;" align="center">
         <a href="inline bg-darkest-gray">
@@ -316,10 +421,10 @@ div.responsive:hover{
         
     <li><a href="https://www.linkedin.com/in/suhail-purkar-394929117" target="_blank"><img src="http://i.imgur.com/KZ0nGo5.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/> </a></li>
     <li><a href="https://www.facebook.com/suhail.purkar" target="_blank"><img src="http://i.imgur.com/rSWBzHQ.png"  class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>
-    <li><img src="http://i.imgur.com/JqvjmWo.png" href="http://codepen.io/suhailp/" target="_blank" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></li>
-    <li><img src="http://i.imgur.com/GvbAIbm.png" href="mailto:suhailpurkar@gmail.com" target="_blank" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></li>
-    <li><a href="https://github.com/SuhailPurkar" target="_blank"><img src="http://i.imgur.com/ranGo4Q.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li> 
-    <li><a href="https://github.com/SuhailPurkar" target="_blank"><img src="http://i.imgur.com/2qqsIkM.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s">
+    <li><a href="http://codepen.io/suhailp/" target="_blank"><img src="http://i.imgur.com/JqvjmWo.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>
+    <li><a onClick="email()"><img src="http://i.imgur.com/GvbAIbm.png" href="mailto:suhailpurkar@gmail.com" target="_blank" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>
+    <li><a onclick="phone()"><img src="http://i.imgur.com/ranGo4Q.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li> 
+    <li><a onclick="home()" target="_blank"><img src="http://i.imgur.com/2qqsIkM.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s">
     <li><a href="https://github.com/SuhailPurkar" target="_blank"><img src="http://i.imgur.com/r6RJ6vu.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>   
       </a></ol>
 
@@ -348,14 +453,7 @@ div.responsive:hover{
 
       </header> 
       <div id="cbp-fbscroller" class="cbp-fbscroller">
-        <nav>
-          <a href="#fbsection1" class="cbp-fbcurrent">Suhail Purkar</a>
-          <a href="#boosted">Booster Boards Website Concept</a>
-          <a href="#hero">hero </a>
-          <a href="#sassiholford">Sassi Holford Website</a>
-          <a href="#specialized">Speciliazed Website Concept</a>
-          
-        </nav>
+       
         
         <section id="fbsection1">
         <div id="particles-js"></div>
@@ -367,28 +465,36 @@ div.responsive:hover{
         <section id="boosted" class="sassihover">
         <div class="info">
         <div class="text" >
+        <h1 class="test wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s" hidden>About me</h1>
                 <img  src="http://i.imgur.com/bxLrJM8.jpg" class="face pic" data-wow-duration="0.6s" data-wow-delay="0.3s"/>
+               
                  <br />
               <br />
-            <h1 class="test wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s" hidden>About me</h1>
+            
+
+
+
 
             <h2 class="wow fadeInLeft display: inline;" data-wow-duration="0.6s" data-wow-delay="0.5s">Student</h2>
+
+            
 
 
             <hr class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.6s"/>
             <div style="clear:both;"></div>
             <div class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.8s">
 
-            <p>Currently a sophmore at the University of Massachussets Amherst pursuing a B.S. in Computer Science and a minor in Mathematics.<br/>
+
+            <p>Currently a sophmore at the University of Massachussets Boston pursuing a B.S. in Computer Science.<br/>
             </p>
                         </div>
         </div>
         </div>    
         
         <div class="mobileinfo gimmesomepadding">
-            <h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">About Me: Student</h1>
+            <h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">Web Developer</h1>
             
-            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Project</button></div>
+            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button></div>
             </p>
             
         </div>
@@ -407,17 +513,18 @@ div.responsive:hover{
             <div class="wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.8s">
             <p>Software devloper well versed in Android app devlopment and Front end web development. Currently learning back end web devlopment, data science and functional programming.<br/>
             </p>
-            <button onclick="window.location.href='#projects'" id="fb3" class="sassi button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button>
+            <button onclick="window.location.href='#projects'" id="fb3" class="sidebar1 sassi button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button>
+           <a href="https://github.com/SuhailPurkar" target="_blank"> <button id="fb3" class="sidebar sassi button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button> </a>
             </div>
         </div>
         </div>  
       
         <div class="mobileinfo gimmesomepadding" >
             <h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s"><br /> <br />
-              Rainyday</h1>
+              Android Developer</h1>
             
 
-            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Project</button></div>
+            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button></div>
 
 
         </div>  
@@ -458,7 +565,7 @@ div.responsive:hover{
 
 
       
-<section id="projects" style="background-color:#151515;" >
+<section id="bottom1" style="background-color:#151515;" >
 
   
   <br>
@@ -492,11 +599,11 @@ div.responsive:hover{
   <div class="img">
     <a target="_blank">
     
-      <img class = "yup" id="myBtn" src="http://i.imgur.com/PN5LYY7.png" alt="Forest" width="600" height="400">
+      <img class = "yup" id = "sunshineImgModal" src="http://i.imgur.com/PN5LYY7.png" alt="Forest" width="600" height="400">
       
       
     </a>
-      <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Sunshine</button></div>
+      <div class="wow fadeInUp" data-wow-duration="0.6s" id="sunshineButtonModal" data-wow-delay="0.8s"><button  id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Sunshine</button></div>
     
   </div>
 </div>
@@ -508,9 +615,58 @@ div.responsive:hover{
     <span class="close">×</span>
     <center><p style = "font-size: 30px">Sunshine</p></center>
 
-    <center><p >A light weight weather app that synchronizes weather information from the <a href = "http://openweathermap.org/api" target = "_blank">OpenWeatherMap API. </a></p></center>
+    <center><p >A light weight weather app that synchronizes weather information from the <a class = "hyper" href = "http://openweathermap.org/api" target = "_blank">OpenWeatherMap API. </a></p></center>
     <center><div>  <center><a href = "https://github.com/SuhailPurkar/Sunshine-2.0" target = "_blank"><button onclick="https://github.com/SuhailPurkar/Sunshine-2.0" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
   <center>  <img src="http://i.imgur.com/hJ4bhfC.gif" alt="Forest" > </center>
+
+  </div>
+
+</div> 
+
+
+
+
+
+
+
+<div id="miwokmodal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style = "background-color: rgba(0,0,0,0.75);">
+    <span class="close3">×</span>
+    <center><p style = "font-size: 30px">Miwok</p></center>
+
+    <center><p >A user friendly Android app to help you learn the Miwok language.</p></center>
+    <div>
+    <div style="position: relative; left: 0; top: 0; float: left">
+
+ <a href = "https://github.com/SuhailPurkar/Miwok" target = "_blank"> <img src="https://play.google.com/intl/en_us/badges/images/badge_new.png" style="position: relative; top: 0; left: 0;"/>
+ </a>
+
+ <a href = "https://github.com/SuhailPurkar/Miwok" target = "_blank"><button  style="position: absolute; top: 30px; " id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a>
+
+</div>
+     
+ <div style = "float: right"><center><img src="http://i.imgur.com/0nvfTj1.gif" alt="Forest" ></center></div>
+
+</div>
+   
+ 
+  </div>
+
+</div>       
+
+<div id="alexandriamodal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style = "background-color: rgba(0,0,0,0.75);">
+    <span class="close4">×</span>
+    <center><p style = "font-size: 30px">Alexandria</p></center>
+
+    <center><p >A simple app to help you find, share and store books. ISBN-13 information pulled from the Google Books APIs. Made during Udacity Advanced Android course.</p></center>
+    <center><div>  <center><a href = "https://github.com/SuhailPurkar/Miwok" target = "_blank"><button id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
+  <center>  <img src="http://i.imgur.com/9m4PwW4.png" alt="Forest" > </center>
+  
 
   </div>
 
@@ -536,11 +692,11 @@ div.responsive:hover{
   <!-- Modal content -->
   <div class="modal-content" style = "background-color: rgba(0,0,0,0.75);">
     <span class="close2">×</span>
-    <center><p style = "font-size: 30px;font-family: "Courier New", Courier, monospace; ">Calculator</p></center>
+    <center><p style = "font-size: 30px;font-family: "Courier New", Courier, monospace; "> Calculator </p></center>
 
-    <center><p style = "font-family: "Courier New", Courier, monospace; ">A simple app to help you calculate the tip on any order. </p></center>
-    <center><div>  <center><a href = "https://github.com/SuhailPurkar/Just-The-Tip" target = "_blank"><button onclick=" " id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
-  <center>  <img src="http://i.imgur.com/gucXCIJ.gif" alt="Forest" > </center>
+    <center><p style = "font-family: "Courier New", Courier, monospace; ">An elegantly simple material calculator</p></center>
+    <center><div>  <center><a href = "https://github.com/SuhailPurkar/Calculator" target = "_blank"><button  id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
+  <center>  <img src="http://i.imgur.com/dVR4yu5.gif" alt="Forest" > </center>
 
   </div>
 
@@ -551,44 +707,19 @@ div.responsive:hover{
 
 
 
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.6s" style= "padding: 5.5em;">
-  <div class="img ">
-    <a target="_blank" >
 
-      <img class = "yup" id = "myBtn1" src="http://rcdcapital.com/wp-content/uploads/2016/02/Hard-Money-Icon-3.png" alt="Forest" width="600" height="400">
-      
 
-      
-    </a>
-     <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Tip Calc </button></div>
-
-    
-  </div>
-</div>
 
 
 <div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.9s" style= "padding: 5.5em; ">
   <div class="img">
     <a target="_blank" >
     
-      <img class = "yup" id = "myBtn1" src="https://drslash.com/wp-content/uploads/2014/07/Calculator.png" alt="Forest" width="600" height="400">
+      <img class = "yup" id = "alexandriaImgModal" src="https://image.flaticon.com/icons/svg/183/183224.svg" alt="Forest" width="600" height="400">
       
       
     </a>
-   <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Calculator </button></div>
-
-  </div>
-</div>
-
-<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.9s" style= "padding: 5.5em; ">
-  <div class="img">
-    <a target="_blank" >
-    
-      <img class = "yup" src="https://drslash.com/wp-content/uploads/2014/07/Contacts.png" alt="Forest" width="600" height="400">
-      
-      
-    </a>
- <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Alexandria </button></div>
+ <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button  id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Alexandria </button></div>
 
   </div>
 </div>
@@ -598,7 +729,7 @@ div.responsive:hover{
   <div class="img">
     <a target="_blank">
     
-      <img class = "yup" id="myBtn" src="http://i.imgur.com/WDtWz6O.png" alt="Forest" width="600" height="400">
+      <img class = "yup" id="sunshineButtonModal" src="http://i.imgur.com/WDtWz6O.png" alt="Forest" width="600" height="400">
       
       
     </a>
@@ -607,15 +738,13 @@ div.responsive:hover{
 </div>
 
 
-
-
                    
 
 <div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.6s" style= "padding: 5.5em;">
   <div class="img ">
     <a target="_blank" >
 
-      <img class = "yup" id = "myBtn1" src="http://i.imgur.com/lBn6Fks.png" alt="Forest" width="600" height="400">
+      <img class = "yup"  src="http://i.imgur.com/lBn6Fks.png" alt="Forest" width="600" height="400">
       
 
       
@@ -627,15 +756,47 @@ div.responsive:hover{
 </div>
 
 
+
+
+
 <div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.9s" style= "padding: 5.5em; ">
   <div class="img">
     <a target="_blank" >
     
-      <img class = "yup" src="http://i.imgur.com/zUNnEkz.png" alt="Forest" width="50" height="50">
+      <img class = "yup" id = "miwokImgModal" src="http://i.imgur.com/zUNnEkz.png" alt="Forest" width="50" height="50">
       
       
     </a>
-   <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Miwok </button></div>
+   <div class="wow fadeInUp" id = "miwokButtonModal" data-wow-duration="0.6s" data-wow-delay="0.8s"><button  id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Miwok </button></div>
+  </div>
+</div>
+
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.6s" style= "padding: 5.5em;">
+  <div class="img ">
+    <a target="_blank" >
+
+      <img class = "yup" id = "tipCalcImgModal" src="http://rcdcapital.com/wp-content/uploads/2016/02/Hard-Money-Icon-3.png" alt="Forest" width="600" height="400">
+      
+
+      
+    </a>
+     <div id = "tipCalcButtonModal" class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button  id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Tip Calc </button></div>
+
+    
+  </div>
+</div>
+
+<div class="responsive wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.9s" style= "padding: 5.5em; ">
+  <div class="img">
+    <a target="_blank" >
+   
+
+      <img class = "yup" id = "calcImgModal"  src="http://i.imgur.com/8mkw5YS.png" alt="Forest" width="600" height="400">
+      
+      
+    </a>
+   <div class="wow fadeInUp" id = "calcButtonModal" data-wow-duration="0.6s" data-wow-delay="0.8s"><button  id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted"> Calculator </button></div>
+
   </div>
 </div>
 
@@ -643,18 +804,23 @@ div.responsive:hover{
   <div class="img">
     <a target="_blank">
     
-      <img  class = "yup" src="http://i.imgur.com/JhnaGrp.png" alt="Forest" style="width:155px; height:160px;">
+      <img  class = "yup" src="http://i.imgur.com/JhnaGrp.png" alt="Forest" >
       
       
     </a>
     
     
-    <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Stockhawk</button></div>
+    <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button  id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Stockhawk</button></div>
   </div>
 
 
 
+
+
+
 </div>
+
+
 
 
 
@@ -675,22 +841,21 @@ div.responsive:hover{
 
 
 
-
-          <section id = "bottom">
+<section id = "bottom">
           <div class="footer">
             
                 <img  src="http://i.imgur.com/bxLrJM8.jpg" class="face" data-wow-duration="0.6s" data-wow-delay="0.3s"/>
           
           <p class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">
-          Sophmore at the University of Massachussets Amherst pursuing a B.S. in Computer Science and a minor in Mathematics. Passionate about creating clean, unique and elegant applications.
+          Hi I'm Suhail Purkar. Sophmore at the University of Massachussets Boston pursuing a B.S. in Computer Science. Passionate about creating clean, unique and elegant applications.
           </p>
-          <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='https://www.facebook.com/suhail.purkar'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Say Hello</button></div>
+          <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><a href="mailto:suhailpurkar@gmail.com?Subject=Hello%20"><button  target="_top" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Say Hello</button></a></div>
 
           </div>
         </section>
   
 
-
+ 
       
 
     
@@ -773,43 +938,109 @@ div.responsive:hover{
 // Get the modal
 var modal = document.getElementById('sunshinemodal');
 var modal1 = document.getElementById('tipmodal');
-
+var modal2 = document.getElementById('calcmodal');
+var modal3 = document.getElementById('miwokmodal');
+var modal4 = document.getElementById('alexandriamodal');
+// need to finish these modals
+//Also need to change up the mobile site
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-var btn1 = document.getElementById("myBtn1");
+var btn = document.getElementById("sunshineButtonModal");
+var btn1 = document.getElementById("tipCalcButtonModal");
+var btn2 = document.getElementById("calcButtonModal");
+var btn3 = document.getElementById("calcImgModal");
+var btn4 = document.getElementById("sunshineImgModal");
+var btn5 = document.getElementById("tipCalcImgModal");
+var btn6 = document.getElementById("miwokImgModal");
+var btn7 = document.getElementById("miwokButtonModal");
+var btn8 = document.getElementById("alexandriaImgModal");
 // Get the <span> element that closes the modal
 
 var span = document.getElementsByClassName("close")[0];
 var span1 = document.getElementsByClassName("close1")[0];
-
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
 btn1.onclick = function() {
     modal1.style.display = "block";
+}
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+btn3.onclick = function() {
+    modal2.style.display = "block";
+} 
+btn4.onclick = function() {
+    modal.style.display = "block";
+}  
+btn5.onclick = function() {
+    modal1.style.display = "block";
+}
+
+btn6.onclick = function() {
+    modal3.style.display = "block";
+}
+btn7.onclick = function() {
+    modal3.style.display = "block";
+}
+btn8.onclick = function() {
+    modal4.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+    modal1.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
 }
 // When the user clicks on <span> (x), close the modal
 span1.onclick = function() {
     modal1.style.display = "none";
 }
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal1.style.display = "none";
-    }
-}
+span2.onclick = function() {
+    modal2.style.display = "none";
+} 
+span3.onclick = function() {
+    modal3.style.display = "none";
+} 
 
+span4.onclick = function() {
+    modal4.style.display = "none";
+} 
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    }
+    } else if (event.target == modal1){
+        modal1.style.display = "none";
+    } else if (event.target == modal2){
+        modal2.style.display = "none";
+    } else if (event.target == modal3){
+        modal3.style.display = "none";
+    } else if (event.target == modal4){
+        modal4.style.display = "none";
+    } 
+}
+
+
+
+
+</script>
+
+
+<script>
+function phone() {
+    alert("Call me: 781-267-3113");
+}
+function home() {
+    alert("255 Elm Street, Braintree MA");
+}
+function email(){
+    alert("Email me: suhailpurkar@gmail.com");
 }
 </script>
 
