@@ -1,7 +1,7 @@
 # Personal-Website 
 My personal website. (Under Construction)
 ## Live 
-www.suhailpurkar.io
+https://www.suhailpurkar.io/
 
 ## Demo
 [<img src="http://i.imgur.com/gbV3eCD.gif" >](http://i.imgur.com/gbV3eCD.gif)
@@ -11,7 +11,7 @@ Vincent Garreaus [particles.js](http://vincentgarreau.com/particles.js/). <br />
 Matt Boldts [typed.js](http://www.mattboldt.com/demos/typed-js/).
 ## License
 
-https://personalwebsite-a1535.firebaseapp.com is Licensed under the MIT license.
+https://www.suhailpurkar.io is Licensed under the MIT license.
 
 The MIT License (MIT)
 
