@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Simple HTML Page with Bootstrap and Placeholder Content</title>
+
+    </head>
+
+  <body>
+    <!-- Container -->
+    <div class="container">
+
+      <!-- Masthead -->
+      <div class="masthead">
+
+        <!-- Navigation -->
+        <nav>
+        </nav>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Simple HTML Page</h1>
+        <p class="lead">Woring with Placeholder Content via Holder, Placehold.it and Base64</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Base64 Image</h2>
+          <p>Great for web conversion.</p>
+          <p><img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140" /></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Image from placehold.it</h2>
+          <p>Quick and dirty.</p>
+          <p><img class="img-circle" src="http://placehold.it/140x140" alt="Generic placeholder image" width="140" height="140" /></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Image from Holder</h2>
+          <p>Simplicity with more control.</p>
+          <p><img class="img-circle" src="" data-src="holder.js/140x140?text=placeholder&theme=industrial" alt="Generic placeholderimage" width="140" height="140" /></p>
+        </div>
+      </div>
+
+       <div class="masthead">
+        <h3 class="text-muted">&nbsp;</h3>
+        <p class="lead">&nbsp;</p>
+        <p></p>
+      </div>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; 2015 &ndash; <span id="currentYear">THIS YEAR</span></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body> 
+  <script type="text/javascript">
+  	$(document).ready(init);
+
+function init(jQuery) {
+  CurrentYear();
+}
+
+function CurrentYear() {
+  var thisYear = new Date().getFullYear()
+  $("#currentYear").text(thisYear);
+}
+  </script>
+</html>
