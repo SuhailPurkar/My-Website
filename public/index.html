@@ -946,6 +946,13 @@ document.getElementById("calcImgModal").onclick = function() {
 document.getElementById("calcButtonModal").onclick = function() {
     document.getElementById('calcmodal').style.display = "block";
 }
+document.getElementById("tf8ImgModal").onclick = function() {
+    document.getElementById('tf8modal').style.display = "block";
+}
+document.getElementById("tf8ButtonModal").onclick = function() {
+    document.getElementById('tf8modal').style.display = "block";
+}
+
 
 
 // When the user clicks anywhere outside of the modal, close it
@@ -960,8 +967,8 @@ window.onclick = function(event) {
         document.getElementById('tipmodal').style.display = "none";
     } else if (event.target == document.getElementById('calcmodal')){
         document.getElementById('calcmodal').style.display = "none";
-    } else if (event.target == modal5){
-        modal5.style.display = "none";
+    } else if (event.target == document.getElementById('tf8modal')){
+       document.getElementById('tf8modal').style.display = "none";
     } else if (event.target == modal6){
         modal6.style.display = "none";
     } else if (event.target == modal7){
