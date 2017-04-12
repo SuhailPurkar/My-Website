@@ -32,6 +32,10 @@
   width: 100%;
 }
 
+#lol1{
+  background-color: #FCE4EC !important;
+}
+
 
 .diss{
 
@@ -53,7 +57,23 @@
   border-top: thin double orange;
 }
 
-.calcLine hr:after {
+.tipcalcLine hr {
+  
+  float: left;
+  border: none;
+    height: 1px;
+  
+  width: 100%;
+  color: lightblue;
+
+    text-align: center;
+; /* old IE */
+    background-color: transparent;
+; /* Modern Browsers */
+  border-top: thin double lightblue;
+}
+
+#bottom1 hr:after {
     content: " ";
     display: inline-block;
     position: relative;
@@ -103,6 +123,7 @@ section .footer1 {
 }
 
 @media only screen and (min-width: 1200px) {
+
  .footer{
   display: none;
  }
@@ -124,16 +145,19 @@ section .footer1 {
   }
 /* Header Graphics */
 @media only screen and (min-width: 767.5px) {
-.top{
-display: none;
-}
+  .top{
+  display: none;
+  }
 }
 
 /* Responsive Graphics */
 @media only screen and (max-width: 767.5px) {
-.diss{
-display: none;
-}
+  .diss{
+  display: none;
+  }
+  #boosted, #specialized{
+  display: none;
+  } 
 }
 @media only screen and (min-width: 1368px) {
 
@@ -390,7 +414,7 @@ div.responsive:hover{
     color: white;
 }
 
-#sunshineButtonModal, #sunshineImgModal, #tipCalcButtonModal, #tipCalcImgModal ,#calcButtonModal, #calcImgModal, #SharikButtonModal, #SharikImgModal, #alexandriaImgModal, 
+#umbrellaButtonModal, #umbrellaImgModal, #tipCalcButtonModal, #tipCalcImgModal ,#calcButtonModal, #calcImgModal, #SharikButtonModal, #SharikImgModal, #alexandriaImgModal, 
 #alexandriaButtonModal, #tf8ButtonModal, #tf8ImgModal, #stockhawkImgModal, #stockHawkButtonModal, #rainydayImgModal, #rainydayButtonModal   {
   
 }
@@ -464,6 +488,10 @@ div.responsive:hover{
         <a href="inline bg-darkest-gray">
 
         <!-- Linkedin -->
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
         <li><a href="https://www.linkedin.com/in/suhail-purkar-394929117" target="_blank"><img src="http://i.imgur.com/KZ0nGo5.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/> </a></li>
         <!-- Facebook -->
         <li><a href="https://www.facebook.com/suhail.purkar" target="_blank"><img src="http://i.imgur.com/rSWBzHQ.png"  class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>
@@ -471,20 +499,17 @@ div.responsive:hover{
         <li><a href="http://codepen.io/suhailp/" target="_blank"><img src="http://i.imgur.com/JqvjmWo.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>
         <!-- Email -->
         <li><a onClick="email()"><img src="http://i.imgur.com/GvbAIbm.png" href="mailto:suhailpurkar@gmail.com" target="_blank" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>
-        <!-- Phone -->
-        <li><a onclick="phone()"><img src="http://i.imgur.com/ranGo4Q.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li> 
-        <!-- Home -->
-        <li><a onclick="home()" target="_blank"><img src="http://i.imgur.com/2qqsIkM.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s">
+        
         <!-- Github -->
         <li><a href="https://github.com/SuhailPurkar" target="_blank"><img src="http://i.imgur.com/r6RJ6vu.png" class="shareicon2  wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.4s"/></a></li>   
         </a>
-        </ol>
+        
 
       <!-- Screen Adjusted header-->
       </header> 
-        <header class="top clearfix">
+        <header class="top clearfix" >
         <!-- typed.js -->
-          <h1 class="bruh wow fadeInDown"  data-wow-duration="0.6s" data-wow-delay="0.1s">Suhail Purkar</h1>
+          <h1 class="bruh wow fadeInDown" style = "font-family: 'Cinzel Decorative';font-size: 27px; " data-wow-duration="0.6s" data-wow-delay="0.1s">Suhail Purkar</h1>
           <!-- Section -->
             <ul style="list-style: none;">
             <li><h2 class="wow fadeInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">Student & Programmer</h2></li>
@@ -532,16 +557,43 @@ div.responsive:hover{
         </div>
     </div>    
     
-    <!-- Mobile section -->    
-    <div class="mobileinfo gimmesomepadding">
-      <h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">Web Developer</h1>
-        <!-- Projects Button -->
-        <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button></div>
-        </p>
-            
-    </div>
 
   </section>
+
+<section class="mobileinfo" id= "lol"> 
+<br />
+<h1 class="calcLine" style = "font-family: 'Cinzel Decorative';font-size: 35px; color: grey">Rainyday</h1>
+<img src="https://image.flaticon.com/icons/svg/234/234791.svg" alt="Forest" width="75%" height="75%" >
+<p class="calcLine" style = "font-family: 'Cinzel Decorative';font-size: 20px; color: grey">A compact light weight <br /> weather app to help <br /> you always stay <br /> ahead of the weather </p> <br />
+
+<img src="http://i.imgur.com/eX2HOki.png" width="50%" height="10%">
+<img style="border-width: 2px; border-style: solid; border-color: black; border-radius: 10px"  src="http://i.imgur.com/B49roIa.png" width="50%" height="10%">
+<br />
+<br />
+
+
+
+
+</section>
+
+<section class="mobileinfo" id= "lol1" > 
+<br />
+<div style="background-color: #FCE4EC !important;">
+<h1 class="calcLine" style = "font-family: 'Cinzel Decorative';font-size: 35px; color: grey">Rainyday</h1>
+<img src="https://image.flaticon.com/icons/svg/234/234791.svg" alt="Forest" width="75%" height="75%" >
+<p class="calcLine" style = "font-family: 'Cinzel Decorative';font-size: 20px; color: grey">A compact light weight <br /> weather app to help <br /> you always stay <br /> ahead of the weather </p> <br />
+
+<img src="http://i.imgur.com/eX2HOki.png" width="50%" height="10%">
+<img style="border-width: 2px; border-style: solid; border-color: black; border-radius: 10px"  src="http://i.imgur.com/B49roIa.png" width="50%" height="10%">
+<br />
+<br />
+</div>
+
+
+
+
+
+</section>
 
 <section id="specialized" class="spechover">
 
@@ -563,15 +615,7 @@ div.responsive:hover{
         </div>
         </div>  
       
-        <div class="mobileinfo gimmesomepadding" >
-            <h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s"><br /> <br />
-              Android Developer</h1>
-            
-
-            <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s"><button onclick="window.location.href='#projects'" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">View Projects</button></div>
-
-
-        </div>  
+        
 
         </section>
 
@@ -589,15 +633,7 @@ div.responsive:hover{
             </div>
         </div>
         </div>    
-        <div class="mobileinfo">
-          <br/>
-          <br/><br/>
-            <h1 class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.7s">About Me:<br /> Future Super Hero</h1>
-            <p>Lorem Ipsum<br/>
-            </p>
-
-            
-        </div>
+        
         </section>
 
 
@@ -609,14 +645,14 @@ div.responsive:hover{
 
 
       
-<section id="bottom1" style="background-color:#151515;" >
+<section id="bottom1" style="background-color:#263238;" >
 
 <br>
 
 <!-- Video & Banner-->
 <div class="outer-container">
   <div class="inner-container">
-    <center> <div class="video-overlay"><center><p class=" wow fadeInDown"  data-wow-duration="2s" data-wow-delay="0.1s" style = "font-size: 50px;    font-family: Georgia, serif;"> Projects </p></center></div></center>
+    <center> <div class="video-overlay"><center><h1 class=" wow fadeInDown"  data-wow-duration="2s" data-wow-delay="0.1s" style = "font-size: 50px;    font-family: 'Cinzel Decorative';"> Projects </h1></center></div></center>
     <!-- Video -->
     <video id="player" src="https://chapteronemovie.b05-apps.nl/assets/videos/INTRO-MP4-GRADED-EGON_1.mp4"  autoplay loop></video>
     </div>
@@ -624,33 +660,40 @@ div.responsive:hover{
   
   
 
-<!-- Sunshine Modal -->
+<!-- umbrella Modal -->
 <div class="responsive wow fadeInDown  " data-wow-duration="0.6s" data-wow-delay="0.3s" style= "padding: 5.5em; ">
   <div class="img">
     <a target="_blank">
     
-      <img class = "yup" id = "sunshineImgModal" src="http://i.imgur.com/PN5LYY7.png" alt="Forest" width="600" height="400">
+      <img class = "yup" id = "umbrellaImgModal" src="https://image.flaticon.com/icons/svg/374/374990.svg" alt="Forest" width="600" height="400">
       
       
     </a>
-      <!-- Sunshine Button -->
-      <div class="wow fadeInUp" data-wow-duration="0.6s" id="sunshineButtonModal" data-wow-delay="0.8s"><button id="fb3" class="button buttonFull button--wapasha button--round-l button--text-thin button--inverted">Sunshine</button></div>
+      <!-- umbrella Button -->
+      <div class="wow fadeInUp" data-wow-duration="0.6s" id="umbrellaButtonModal" data-wow-delay="0.8s"><button id="fb3" class="button buttonFull button--wapasha button--round-l button--text-thin button--inverted">umbrella</button></div>
     
   </div>
 </div>
 
-<!-- Sunshine Modal content -->
-<div id="sunshinemodal" class="modal">
+<!-- umbrella Modal content -->
+<div id="umbrellamodal" class="modal">
 
-  <div class="modal-content" style = "background-color: grey;">
-  <center><img style = "border-radius: 25px" class = "yup" src="http://i.imgur.com/PN5LYY7.png" alt="Forest" width="200" height="200">  </center>
-   <br />
-   <div>
-      <a href = "https://github.com/SuhailPurkar/Sunshine-2.0" target = "_blank"><button style="margin-right: 100px"  onclick="https://github.com/SuhailPurkar/Sunshine-2.0" id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a>
-      
-   </div>
+  <div class="modal-content" style = "background-color: #263238;">
+  <br />
+  <br />
+  <div style="float: left;">
+    <div class="calcLine"><p class="calcLine" style = "font-family: 'Cinzel Decorative';font-size: 20px;">A light weight weather <br /> app that synchronizes <br /> weather information from <br /> the <a href = "https://openweathermap.org/"> OpenWeatherMap API </a> <hr class="calcLine"></p></div>
+    <br />
+    <br />
+    <div><a href = "https://github.com/SuhailPurkar/umbrella-2.0" target = "_blank"><img style="border-radius: 10px" class = "yup" src="http://i.imgur.com/B49roIa.png" width="250" height="75"></a></div>
+    <br />
+    <div><a href="https://play.google.com/store/apps/details?id=com.suhail.material.calculator" target = "_blank"><img class="yup1" src="http://i.imgur.com/eX2HOki.png" width="250" height="75"></a></div>
+    <div><a href="https://developer.android.com/studio/index.html" target = "_blank"><img class = "yup  " src="https://1.bp.blogspot.com/-PwaAONmMm78/V-ASbVPG39I/AAAAAAAADZY/boHNhTW5V4Y45qzx6gIweePgoO2VkIhfQCLcB/s1600/image04.png" width="200" height="200"></a></div>
+  </div>
+  
 
-      <img src="http://i.imgur.com/hJ4bhfC.gif" alt="Forest" style="margin-right: 150px"> 
+  <center><div > <img class="yup" src="http://i.imgur.com/rYkTK3i.gif" width="300" height="600" alt="Forest" > </div> </center>
+    
 
   </div>
 
@@ -729,15 +772,25 @@ div.responsive:hover{
 <!-- tipCalc Modal Content -->
 <div id="tipmodal" class="modal">
  
-  <div class="modal-content" style = "background-color: black;">
-    <span class="close1">×</span>
-    <center><p style = "font-size: 30px;font-family: "Courier New", Courier, monospace; ">Just The Tip</p></center>
+  <div class="modal-content" style = "background-color: #263238;">
+  <br />
+  <br />
+  <div style="float: left;">
+    <div class="tipcalcLine"><p class="calcLine" style = "font-family: 'Cinzel Decorative';font-size: 20px;">A simple app to <br /> help you calculate <br /> the tip on any order <hr class="calcLine"></p></div>
+    <br />
+    <br />
+    <div><a href = "https://github.com/SuhailPurkar/Just-The-Tip" target = "_blank"><img style="border-radius: 10px" class = "yup" src="http://i.imgur.com/B49roIa.png" width="250" height="75"></a></div>
+    <br />
+    <div><a href="https://play.google.com/store/apps/details?id=com.suhail.material.calculator" target = "_blank"><img class="yup1" src="http://i.imgur.com/eX2HOki.png" width="250" height="75"></a></div>
+    <div><a href="https://developer.android.com/studio/index.html" target = "_blank"><img class = "yup  " src="https://1.bp.blogspot.com/-PwaAONmMm78/V-ASbVPG39I/AAAAAAAADZY/boHNhTW5V4Y45qzx6gIweePgoO2VkIhfQCLcB/s1600/image04.png" width="200" height="200"></a></div>
+  </div>
+  
 
-    <center><p style = "font-family: "Courier New", Courier, monospace; ">A simple app to help you calculate the tip on any order. </p></center>
-    <center><div>  <center><a href = "https://github.com/SuhailPurkar/Just-The-Tip" target = "_blank"><button onclick=" " id="fb3" class=" button button--wapasha button--round-l button--text-thin button--inverted">Github</button></a></center></div></center>
-    <center>  <img src="http://i.imgur.com/gucXCIJ.gif" alt="Forest" > </center>
+  <center><div > <img class="yup" src="http://i.imgur.com/rYkTK3i.gif" width="300" height="600" alt="Forest" > </div> </center>
+    
 
   </div>
+
 </div>
 
 <!-- Calc Modal -->
@@ -758,7 +811,7 @@ div.responsive:hover{
   <br />
   <br />
   <div style="float: left;">
-    <div class="calcLine"><p class="calcLine" style = "font-family: 'Cinzel Decorative';font-size: 20px;">An elegegantly simple <br /> material  calculator made <br /> with Android Studio <hr class="calcLine"></p></div>
+    <div class="calcLine"><p class="calcLine" style = "font-family: 'Cinzel Decorative';font-size: 20px;">An elegantly simple <br /> material  calculator made <br /> with Android Studio <hr class="calcLine"></p></div>
     <br />
     <br />
     <div><a href = "https://github.com/SuhailPurkar/Calculator" target = "_blank"><img style="border-radius: 10px" class = "yup" src="http://i.imgur.com/B49roIa.png" width="250" height="75"></a></div>
@@ -776,6 +829,7 @@ div.responsive:hover{
 
 
 <!-- tf8 Modal -->
+
 <div class="responsive wow fadeInDown  " data-wow-duration="0.6s" data-wow-delay="0.3s" style= "padding: 5.5em; ">
   <div class="img">
     <a target="_blank"> <img class = "yup" id="tf8ImgModal" src="http://i.imgur.com/WDtWz6O.png" alt="Forest" width="600" height="400"> </a>
@@ -799,12 +853,11 @@ div.responsive:hover{
   </div>
 </div>
 
-
                    
 <!-- Rainyday Modal -->
 <div class="responsive wow fadeInDown  " data-wow-duration="0.6s" data-wow-delay="0.6s" style= "padding: 5.5em;">
   <div class="img ">
-    <a target="_blank" ><img id="rainydayImgModal" class = "yup"  src="http://i.imgur.com/lBn6Fks.png" alt="Forest" width="600" height="400"></a>
+    <a target="_blank" ><img id="rainydayImgModal" class = "yup"  src="https://image.flaticon.com/icons/svg/234/234791.svg" alt="Forest" width="600" height="400"></a>
     <!-- Rainyday Button -->
       <div class="wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s" id="rainydayButtonModal"><button onclick="window.location.href='#projects'" id="fb3" class=" button buttonFull button--wapasha button--round-l button--text-thin button--inverted"> Rainyday </button></div>
 
@@ -948,11 +1001,11 @@ div.responsive:hover{
     </script>
   <script>
 
-document.getElementById("sunshineImgModal").onclick = function() {
-    document.getElementById('sunshinemodal').style.display = "block";
+document.getElementById("umbrellaImgModal").onclick = function() {
+    document.getElementById('umbrellamodal').style.display = "block";
 }
-document.getElementById("sunshineButtonModal").onclick = function() {
-    document.getElementById('sunshinemodal').style.display = "block";
+document.getElementById("umbrellaButtonModal").onclick = function() {
+    document.getElementById('umbrellamodal').style.display = "block";
 }
 document.getElementById("SharikImgModal").onclick = function() {
     document.getElementById('Sharikmodal').style.display = "block";
@@ -1001,8 +1054,8 @@ document.getElementById("stockHawkButtonModal").onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == document.getElementById('sunshinemodal')) {
-        document.getElementById('sunshinemodal').style.display = "none";
+    if (event.target == document.getElementById('umbrellamodal')) {
+        document.getElementById('umbrellamodal').style.display = "none";
     } else if (event.target == document.getElementById('Sharikmodal')){
         document.getElementById('Sharikmodal').style.display = "none";
     } else if (event.target == document.getElementById('alexandriamodal')){
